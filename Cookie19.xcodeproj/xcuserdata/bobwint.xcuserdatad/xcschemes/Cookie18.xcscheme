@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "914AA1CD213323170040D5EF"
-               BuildableName = "Cookie18.app"
-               BlueprintName = "Cookie18"
-               ReferencedContainer = "container:Cookie18.xcodeproj">
+               BuildableName = "Cookie19.app"
+               BlueprintName = "Cookie19"
+               ReferencedContainer = "container:Cookie19.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "91E826022172EF8C002E30CA"
                BuildableName = "Cookie18Tests.xctest"
                BlueprintName = "Cookie18Tests"
-               ReferencedContainer = "container:Cookie18.xcodeproj">
+               ReferencedContainer = "container:Cookie19.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "914AA1CD213323170040D5EF"
-            BuildableName = "Cookie18.app"
-            BlueprintName = "Cookie18"
-            ReferencedContainer = "container:Cookie18.xcodeproj">
+            BuildableName = "Cookie19.app"
+            BlueprintName = "Cookie19"
+            ReferencedContainer = "container:Cookie19.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "914AA1CD213323170040D5EF"
-            BuildableName = "Cookie18.app"
-            BlueprintName = "Cookie18"
-            ReferencedContainer = "container:Cookie18.xcodeproj">
+            BuildableName = "Cookie19.app"
+            BlueprintName = "Cookie19"
+            ReferencedContainer = "container:Cookie19.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "914AA1CD213323170040D5EF"
-            BuildableName = "Cookie18.app"
-            BlueprintName = "Cookie18"
-            ReferencedContainer = "container:Cookie18.xcodeproj">
+            BuildableName = "Cookie19.app"
+            BlueprintName = "Cookie19"
+            ReferencedContainer = "container:Cookie19.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

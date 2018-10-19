@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Cookie18
+//  Cookie
 //
 //  Created by Bob Wint on 8/26/18.
 //  Copyright © 2018 BWInc. All rights reserved.

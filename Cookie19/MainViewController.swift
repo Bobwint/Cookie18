@@ -262,7 +262,7 @@ class MainViewController: UITableViewController, AddEditViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Create new cookie object and populate its properties
-        print (getDataFilePath())
+//        print (getDataFilePath())
     }
 
     override func didReceiveMemoryWarning() {
