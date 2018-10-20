@@ -186,10 +186,10 @@ class MainViewController: UITableViewController, AddEditViewControllerDelegate {
                 if nextIndex > lastIndex {          // if past end of array
                     nextIndex -= cookieData.count   // reset back to 0
                 }
-                if nextIndex == currIndex {                         // if back to start of loop
-                    break                                           // exit
+                if nextIndex == currIndex {         // if back to start of loop
+                    break                           // exit
                 }
-                updateable = true                                   // test for valid position
+                updateable = true                   // test for valid position
                 if chefArray[currIndex][nextIndex] != openChar { updateable = false }   // is it open
                 if toTakeCnt[currIndex] == 0 { updateable = false } // does taker still need more dozens
                 if toGiveCnt[nextIndex] == 0 { updateable = false } // does giver still have dozens to give

@@ -12,12 +12,12 @@
         <!--Chef List-->
         <scene sceneID="W7D-gG-tLy">
             <objects>
-                <tableViewController id="xVJ-Li-Ms6" customClass="MainViewController" customModule="Cookie18" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="xVJ-Li-Ms6" customClass="MainViewController" customModule="Cookie19" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="I0c-Tv-lAb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="dGQ-7A-8NT">
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="dGQ-7A-8NT">
                             <rect key="frame" x="0.0" y="88" width="320" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Find Solution"/>
@@ -84,7 +84,7 @@
         <!--Add Edit View Controller-->
         <scene sceneID="jgT-kL-Wh6">
             <objects>
-                <tableViewController id="fTy-Qk-jZE" customClass="AddEditViewController" customModule="Cookie18" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fTy-Qk-jZE" customClass="AddEditViewController" customModule="Cookie19" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="bvm-rd-Hcm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
                                                     <rect key="frame" x="16" y="6" width="288" height="31.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="fTy-Qk-jZE" id="6g3-qe-uSB"/>
                                                     </connections>
@@ -128,7 +128,7 @@
                                                     <rect key="frame" x="16" y="6" width="288" height="31.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="fTy-Qk-jZE" id="q7W-Nd-Zw5"/>
                                                     </connections>
@@ -153,7 +153,7 @@
                                                     <rect key="frame" x="16" y="6" width="288" height="31.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="fTy-Qk-jZE" id="mol-SB-VJF"/>
                                                     </connections>
