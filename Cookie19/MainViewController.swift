@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: UITableViewController, AddEditViewControllerDelegate {
     
-    var cookieData : [cookie] = []
+    var cookieData : [cookie] = []  // datatype defined in Cookie.swift class file
     var editIndexPath : NSIndexPath?
 
     required init?(coder aDecoder: NSCoder) {
@@ -21,14 +21,26 @@ class MainViewController: UITableViewController, AddEditViewControllerDelegate {
     }
 
     func loadcookies() {
-        let path = getDataFilePath()
+        let path = getDataFilePath()    // the location of the cookie datafile
         if let data = try? Data(contentsOf: path) {
             let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
+            // if datafile exists populate cookieData array with its members
             cookieData = unarchiver.decodeObject(forKey: "cookieData") as! [cookie]
             unarchiver.finishDecoding()
+            print(cookieData)   // datafile exists or existed at one point
+        } else {
+            print("nil")        // datafile never existed
         }
     }
 
+    // the means to retrieve the path where my data file is saved between executions (data persistence)
+    func getDataFilePath() -> URL {
+        // get list of directories in my sandbox (returns an array of strings)
+        var paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        // returns the first path from paths array and appends a desired filename creating a property list
+        return paths[0].appendingPathComponent("cookie.plist") // return pathname with filename attached
+    }
+    
     func addItemViewControllerDidCancel(controller: AddEditViewController) {
         dismiss(animated: true, completion: nil)
     }
@@ -101,14 +113,6 @@ class MainViewController: UITableViewController, AddEditViewControllerDelegate {
         let indexPaths = [indexPath]
         tableView.deleteRows(at: indexPaths, with: .automatic)
         savecookieItems()
-    }
-
-    // saving data between executions (data persistence)
-    func getDataFilePath() -> URL {
-        // get list of directories in my sandbox (returns an array of strings)
-        var paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        // returns the first path from paths array and appends a desired filename creating a property list
-        return paths[0].appendingPathComponent("cookie.plist")
     }
 
     func savecookieItems() {
